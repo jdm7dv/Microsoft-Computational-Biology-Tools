@@ -1,0 +1,5 @@
+F:\Universities\Systems Biology\compbio\Changesets\mscompbio-27246\CreateEpitome\SpecialFunctions\bin\Debug\SpecialFunctions.dll
+F:\Universities\Systems Biology\compbio\Changesets\mscompbio-27246\CreateEpitome\SpecialFunctions\bin\Debug\SpecialFunctions.pdb
+F:\Universities\Systems Biology\compbio\Changesets\mscompbio-27246\CreateEpitome\SpecialFunctions\obj\Debug\SpecialFunctions.csprojResolveAssemblyReference.cache
+F:\Universities\Systems Biology\compbio\Changesets\mscompbio-27246\CreateEpitome\SpecialFunctions\obj\Debug\SpecialFunctions.dll
+F:\Universities\Systems Biology\compbio\Changesets\mscompbio-27246\CreateEpitome\SpecialFunctions\obj\Debug\SpecialFunctions.pdb

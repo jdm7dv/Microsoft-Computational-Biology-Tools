@@ -1,0 +1,2 @@
+LeafDistribution	rowIndex	rowCount	pieceIndex	NullIndex	PredictorVariable	TargetVariable	TT	TF	FT	FF	GlobalNonMissingCount	lambda_Null	pi_Null	Loglikelihood_Null	selection_pressure_Alt	lambda_Alt	pi_Alt	Loglikelihood_Alt	diff	PValue
+DiscreteConditionalEscape	0	11	0	-1	AnHla	AnAA@APos	72	275	102	216	665	3.88215157476202	0.281701082427019	-356.030583326014	0.344082782217393	3.55430560760548	0.330681918730857	-349.5706407614	6.45994256461483	0.000325111167748249

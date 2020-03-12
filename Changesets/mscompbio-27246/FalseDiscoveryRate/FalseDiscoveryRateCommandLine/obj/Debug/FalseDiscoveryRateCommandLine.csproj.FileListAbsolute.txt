@@ -1,0 +1,7 @@
+C:\Research\projects\FalseDiscoveryRate\FalseDiscoveryRateCommandLine\bin\Debug\FalseDiscoveryRateCommandLine.exe
+C:\Research\projects\FalseDiscoveryRate\FalseDiscoveryRateCommandLine\bin\Debug\FalseDiscoveryRateCommandLine.pdb
+C:\Research\projects\FalseDiscoveryRate\FalseDiscoveryRateCommandLine\bin\Debug\FalseDiscoveryRateClasses.dll
+C:\Research\projects\FalseDiscoveryRate\FalseDiscoveryRateCommandLine\bin\Debug\FalseDiscoveryRateClasses.pdb
+C:\Research\projects\FalseDiscoveryRate\FalseDiscoveryRateCommandLine\obj\Debug\ResolveAssemblyReference.cache
+C:\Research\projects\FalseDiscoveryRate\FalseDiscoveryRateCommandLine\obj\Debug\FalseDiscoveryRateCommandLine.exe
+C:\Research\projects\FalseDiscoveryRate\FalseDiscoveryRateCommandLine\obj\Debug\FalseDiscoveryRateCommandLine.pdb

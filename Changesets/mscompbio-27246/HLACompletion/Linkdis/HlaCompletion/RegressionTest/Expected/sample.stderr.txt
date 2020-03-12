@@ -1,0 +1,2 @@
+Trimmed C17, C18, or A74 to two digits to fit model.
+Two terms combined because they are equal at the generality used by the model.

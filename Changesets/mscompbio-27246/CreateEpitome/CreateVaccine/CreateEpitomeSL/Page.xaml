@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="CreateEpitomeSL.Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="Auto" Height="Auto" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+	<UserControl.Background>
+		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+			<GradientStop Color="#FFEEEFF3" Offset="0"/>
+			<GradientStop Color="#FF293944" Offset="1"/>
+		</LinearGradientBrush>
+	</UserControl.Background>
+	<StackPanel x:Name="LayoutRoot" Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+		<StackPanel.Background>
+			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+				<GradientStop Color="#FF0937F6"/>
+				<GradientStop Color="#FF9A9293" Offset="1"/>
+			</LinearGradientBrush>
+		</StackPanel.Background>
+		<StackPanel  Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" >
+		            <Button x:Name="uploadButton" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Content="Upload File" Width="98" Height="Auto" FontFamily="Trebuchet MS" FontSize="14"/>
+		    	    <Button x:Name="loadSampleButton" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Content="Load Sample" Width="98" Height="Auto" FontFamily="Trebuchet MS" FontSize="14"/>
+                    <Button x:Name="loadTextButton" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Content="Load Text Sample" Width="122" Height="Auto" FontFamily="Trebuchet MS" FontSize="14"/>
+				    </StackPanel>
+    	    <TextBox x:Name="inputTextBox" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Text="" TextWrapping="Wrap" Height="200" />
+		    <StackPanel  Orientation="Horizontal" >
+    	    <Button x:Name="goButton"   Content="Compute Results" FontFamily="Trebuchet MS" FontSize="12" Width="101" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    	    <Button x:Name="stopButton"  Content="Pause" Width="101" FontFamily="Trebuchet MS" FontSize="12" HorizontalAlignment="Left"/>
+			<CheckBox x:Name="showLastCheckBox" Content="Show Only Last" Foreground="#FFFFFFFF"/>
+        </StackPanel>
+    	<TextBox x:Name="outputTextBox" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Margin="0,4,0,-8"  Text="" TextWrapping="Wrap" MaxHeight="500"   />
+		<Canvas x:Name="edgeCanvas" Width="320" Height="220" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.516,0.5" Margin="0,10,0,1" >
+		<TextBlock x:Name="plotLength" Height="16" Width="316" Text="300" TextWrapping="Wrap" Canvas.Top="207" Canvas.Left="2" HorizontalAlignment="Right" VerticalAlignment="Center" TextAlignment="Right" Foreground="#FFFAF8F8"/>
+		
+			<TextBlock Height="16" Width="316" Text="0" TextWrapping="Wrap" Canvas.Top="207" Canvas.Left="2" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Left" Foreground="#FFFFFFFF"/>
+			<Canvas x:Name="plotCanvas" Width="300" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="11,10,0,0">
+				<Canvas.Background>
+					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+						<GradientStop Color="#FFF0E6E6"/>
+						<GradientStop Color="#FF4E518A" Offset="1"/>
+					</LinearGradientBrush>
+				</Canvas.Background>
+				<Canvas.RenderTransform>
+					<ScaleTransform ScaleX="1" ScaleY="-1" CenterY="100"/>
+				</Canvas.RenderTransform>
+			
+
+			</Canvas>
+		
+			<TextBlock Height="16" Width="316" Text="length" TextWrapping="Wrap" Canvas.Top="207" Canvas.Left="2" HorizontalAlignment="Left" VerticalAlignment="Center" TextAlignment="Center" Foreground="#FFFFFFFF"/>
+			<TextBlock Height="16" Width="44" Text="100%" TextWrapping="Wrap" Canvas.Top="2" Canvas.Left="-36" HorizontalAlignment="Left" VerticalAlignment="Center" TextAlignment="Right" Foreground="#FFFAF8F8"/>
+			<TextBlock Height="16" Width="195" Text="coverage" TextWrapping="Wrap" Canvas.Top="102.5" Canvas.Left="-94.5" HorizontalAlignment="Left" VerticalAlignment="Center" TextAlignment="Center" RenderTransformOrigin="0.5,0.5" Foreground="#FFFAF8F8">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-90"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform>
+			</TextBlock>
+		</Canvas>
+		
+    </StackPanel>
+</UserControl>

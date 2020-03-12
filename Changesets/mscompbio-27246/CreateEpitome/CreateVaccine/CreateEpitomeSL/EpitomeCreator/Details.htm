@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Create Epitope Details</title>
+
+    <style type="text/css">
+    html, body {
+	    height: 100%;
+	    overflow: auto;
+    }
+    body {
+	    padding: 0;
+	    margin: 0;
+    }
+	</style>
+    <script type="text/javascript">
+<!-- saved from url=(0014)about:internet -->
+    </script></head>
+
+<body bgcolor="#FFFFCC">
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="13">&nbsp;</td>
+		<td width="511">
+
+		<b>
+		<a href="http://research.microsoft.com" style="text-decoration: none">
+		<font color="#000000" face="Arial" size="2">Microsoft<br/>
+		</font><font face="Arial" size="5" color="#000000">&nbsp;&nbsp;&nbsp; </font>
+		<font color="#000000" face="Arial" size="6">Research</font></a></b></td>
+		<td width="500">
+
+		<p align="right"/><a href="http://research.microsoft.com/research/eScience/" style="text-decoration: none; font-weight: 700"><font size="5" color="#000000" face="Arial">eScience 
+		Research Group</font></a></td>
+		<td>
+		&nbsp;</td>
+	</tr>
+</table>
+<p/>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="23">&nbsp;</td>
+		<td width="1001" bgcolor="#E3E3E1">
+		<table border="1" width="100%" bordercolorlight="#D1DBDA" bordercolordark="#FFFFFF" bgcolor="#EEF0ED">
+			<tr>
+				<td width="265">
+		<a href="http://atom.research.microsoft.com/bio/" style="text-decoration: none; font-weight: 700">
+				<font color="#666666" size="4" face="Arial">Computational 
+				Biology Tools</font></a></td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+		<td>
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="23">&nbsp;</td>
+		<td width="1001" bgcolor="#E3E3E1">
+		<table border="1" width="100%" bordercolorlight="#D1DBDA" bordercolordark="#FFFFFF" bgcolor="#DBDCD7">
+			<tr>
+				<td width="322"><br/>
+				<span style="font-weight: 700">
+				<font face="Arial" size="6" color="#666666">
+				<a href="Default.htm" style="text-decoration: none">
+				<font color="#757575">Create Epitome</font></a><br>
+				Details</font></span></td>
+				<td align="left">
+				<table border="0" width="278" height="49">
+					<tr>
+						<td width="91" align="center" valign="bottom"><b>
+						<a href="Default.htm">
+						<font face="Arial" size="2" color="#000000">Tool</font></a></b></td>
+						<td width="91" align="center" valign="bottom"><b>
+						<font face="Arial" size="2"><a href="Default.htm#References">
+						<font color="#000000">References</font></a></font></b></td>
+						<td width="92" align="center" valign="bottom"><b>
+						<font face="Arial" size="2"><a href="Default.htm#Code">
+						<font color="#000000">Code</font></a></font></b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+		<td>
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="23" height="532">&nbsp;</td>
+		<td width="1001" height="532" bgcolor="#FFFFFF">
+		<table border="0" width="1001" height="536">
+			<tr>
+				<td valign="top"><div id="silverlightControlHost" >
+		<br/>
+		<span class="style1"><font face="Arial" size="4" color="#0000FF">
+		Overview</font></span><p align="justify"><span class="style1">
+						<font size="3" face="Arial" color="#757575">This tool 
+		models genetic diversity by summarizing a large input dataset into an 
+		epitome, a short sequence capturing many overlapping subsequences from 
+		the dataset.</font></span></p>
+		<p align="justify"><span class="style1"><font face="Arial" color="#757575">For example, 
+		applying the tool to modeling the diversity of HIV, the epitome produces 
+		relatively small vaccine immunogens covering a large number of immune 
+		system targets known as epitopes. Our experiments have shown that the 
+		epitome includes more epitopes than other vaccine designs of similar 
+		length, including cocktails of consensus strains, phylogenetic tree 
+		centers, and observed strains.</font></span></p>
+		<p align="justify"><span class="style1"><font size="3" face="Arial" color="#757575">The 
+		tool optimizes greedily, that is, it </font>
+		<font face="Arial" color="#757575">iteratively increases the length of 
+		the epitome by appending a patch (possibly with overlap) from the data 
+		which maximally reduces the ratio of the sum of the patch weights of the 
+		included patches to the length of the epitome. The process can be 
+		stopped once the desired length is achieved (rather than when the entire 
+		set of patches is included as in the superstring problem).</font></span></p>
+		<p><span class="style1"><font face="Arial" size="4" color="#0000FF">
+		Input Format</font></span></p>
+		<p><span class="style1"><font size="3" face="Arial" color="#757575">The 
+		tool accepts input in two formats.</font></span></p>
+		<p><span class="style1"><font face="Arial" color="#0000FF">First, a text table:</font></span></p>
+		<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 153px">
+			<colgroup>
+				<col width="64" span="2" style="width:48pt">
+			</colgroup>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; width: 98px; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				Patch</td>
+				<td style="width: 53px; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				Weight</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="98">
+				&nbsp;NKIVRMYSP</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="53">
+				167</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="98">
+				&nbsp;LNKIVRMYS</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="53">
+				167</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="98">
+				&nbsp;PQDLNTMLN</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="53">
+				166</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="98">
+				&nbsp;QDLNTMLNT</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="53">
+				166</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="98">
+				&nbsp;GATPQDLNT</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="53">
+				166</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="98">
+				&nbsp;EGATPQDLN</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="53">
+				166</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="98">
+				&nbsp;ATPQDLNTM</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="53">
+				165</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="98">
+				&nbsp;TPQDLNTML</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px" width="53">
+				165</td>
+			</tr>
+		</table>
+		<p><span class="style1"><font face="Arial" color="#757575">Separate the 
+		columns with space, tab, or comma. The headers are required.</font></span></p>
+		<p><span class="style1"><font face="Arial" color="#757575">The first 
+		column contains patches for possible inclusion in the epitome. The 
+		second column gives their relative weights.</font></span></p>
+		<p><span class="style1"><font face="Arial" color="#757575">This format 
+		is easily created via a spreadsheet program such as Excel. Transfer data 
+		to the tool either with cut (cntl-C) and paste (cntl-V) or by saving the 
+		spreadsheet in text format and using the tool's &quot;Upload File&quot; button.
+		</font></span></p>
+		<p><span class="style1"><font face="Arial" color="#0000FF">The tool also 
+		accepts a second forma</font><font face="Arial" color="#757575">t: free text without weights. For example,</font></span></p>
+		<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 192px">
+			<colgroup>
+				<col width="64" style="width:48pt">
+			</colgroup>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; width: 190px; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				<span class="style1"><font face="Arial" color="#757575">Twinkle, 
+				twinkle, little star;<br>
+				How I wonder what you are.</font></span></td>
+			</tr>
+		</table>
+		<p><span class="style1"><font face="Arial" size="4" color="#0000FF">
+		Output Format</font></span></p>
+		<p><span class="style1"><font face="Arial" color="#757575">When &quot;Show 
+		Only Last&quot; is unchecked, the tool shows the sequence of epitomes 
+		created. This output is tab-delimited and suitable for cutting (cntl-A,cntl-C) 
+		and pasting (cntl-V) into a spreadsheet such as Excel.</font></span></p>
+		<table border="0" cellpadding="0" cellspacing="0" width="320" style="border-collapse: collapse; width: 240pt">
+			<colgroup>
+				<col width="64" span="5" style="width:48pt">
+			</colgroup>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" width="64" style="height: 15.0pt; width: 48pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				Method</td>
+				<td width="64" style="width: 48pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				AminoAcidLength</td>
+				<td width="64" style="width: 48pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				numComponents</td>
+				<td width="64" style="width: 48pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				coverage</td>
+				<td width="64" style="width: 48pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				Vaccine</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				Greedy</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				9</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				1</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				0.125753</td>
+				<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				LNKIVRMYS</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				Greedy</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				10</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				1</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				0.251506</td>
+				<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				LNKIVRMYSP</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				Greedy</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				17</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				1</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				0.376506</td>
+				<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				PQDLNTMLNKIVRMYSP</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				Greedy</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				18</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				1</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				0.500753</td>
+				<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				TPQDLNTMLNKIVRMYSP</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				Greedy</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				19</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				1</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				0.625</td>
+				<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				ATPQDLNTMLNKIVRMYSP</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				Greedy</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				20</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				1</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				0.75</td>
+				<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				GATPQDLNTMLNKIVRMYSP</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				Greedy</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				21</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				1</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				0.875</td>
+				<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				EGATPQDLNTMLNKIVRMYSP</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				Greedy</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				30</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				2</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				1</td>
+				<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				EGATPQDLNTMLNKIVRMYSP,QDLNTMLNT</td>
+			</tr>
+		</table>
+		<p>&nbsp;</p>
+		<table border="0" cellpadding="0" cellspacing="0" width="320" style="border-collapse: collapse; width: 240pt">
+			<colgroup>
+				<col width="64" span="5" style="width:48pt">
+			</colgroup>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" width="64" style="height: 15.0pt; width: 48pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				Method</td>
+				<td width="64" style="width: 48pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				AminoAcidLength</td>
+				<td width="64" style="width: 48pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				numComponents</td>
+				<td width="64" style="width: 48pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				coverage</td>
+				<td width="64" style="width: 48pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				Vaccine</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				Greedy</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				7</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				1</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				0.3</td>
+				<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				TWINKLE</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				Greedy</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				7</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				1</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				0.3</td>
+				<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				TWINKLE</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				Greedy</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				10</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				2</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				0.4</td>
+				<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				TWINKLE,HOW</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				Greedy</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				13</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				2</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				0.5</td>
+				<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				WHATWINKLE,HOW</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				Greedy</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				12</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				1</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				0.5</td>
+				<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				HOWHATWINKLE</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				Greedy</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				15</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				2</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				0.6</td>
+				<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				HOWHATWINKLE,YOU</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				Greedy</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				18</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				3</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				0.7</td>
+				<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				HOWHATWINKLE,YOU,ARE</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				Greedy</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				20</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				3</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				0.8</td>
+				<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				HOWHATWINKLE,YOU,STARE</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				Greedy</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				26</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				4</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				0.9</td>
+				<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				HOWHATWINKLE,YOU,STARE,LITTLE</td>
+			</tr>
+			<tr height="20" style="height:15.0pt">
+				<td height="20" style="height: 15.0pt; color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				Greedy</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				32</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				5</td>
+				<td align="right" style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				1</td>
+				<td style="color: black; font-size: 11.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; text-align: general; vertical-align: bottom; white-space: nowrap; border: 1px solid; padding-left: 1px; padding-right: 1px; padding-top: 1px">
+				HOWHATWINKLE,YOU,STARE,LITTLE,WONDER</td>
+			</tr>
+		</table>
+		<p>&nbsp;</div></td>
+				<td valign="top" width="210">
+				&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+		<td height="532">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="23">&nbsp;</td>
+		<td width="1001" bgcolor="#FFFFFF">
+
+
+
+			&nbsp;</td>
+		<td>
+		&nbsp;</td>
+	</tr>
+</table>
+</body>
+</html>
+<!-- Microsoft Research, eScience Research Group, Microsoft Reciprocal License (Ms-RL)
+     Copyright (c) Microsoft Corporation. All rights reserved.
+-->

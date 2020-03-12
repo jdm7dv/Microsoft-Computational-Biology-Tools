@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Create Epitope</title>
+
+    <style type="text/css">
+    html, body {
+	    height: 100%;
+	    overflow: auto;
+    }
+    body {
+	    padding: 0;
+	    margin: 0;
+    }
+    #silverlightControlHost {
+    }
+    
+
+	    .style1
+        {
+            font-size: medium;
+        }
+</style>
+    
+    <script type="text/javascript">
+<!-- saved from url=(0014)about:internet -->
+        
+	function ResizeObject( height )
+	{ 
+	    if (!(height > 0)) {
+	        return;
+	    }
+	//Need both host and slobj to work with both IE and Firefox    
+	    var slControl = document.getElementById( "silverlightControl" );
+	    slControl.style.height = height + "px";
+	    var hostx = document.getElementById( "silverlightControlHost" );
+	    hostx.style.height = height; //.ToString() + "px";
+	}
+
+
+        
+        function GetVisibleArea()
+        {
+            return document.documentElement.clientHeight;
+        }
+    
+        function onSilverlightError(sender, args) {
+        
+            var appSource = "";
+            if (sender != null && sender != 0) {
+                appSource = sender.getHost().Source;
+            } 
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+            
+            var errMsg = "Unhandled Error in Silverlight 2 Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError")
+            {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError")
+            {           
+                if (args.lineNumber != 0)
+                {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+</head>
+
+<body bgcolor="#FFFFCC">
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="13">&nbsp;</td>
+		<td width="511">
+
+		<b>
+		<a href="http://research.microsoft.com" style="text-decoration: none">
+		<font color="#000000" face="Arial" size="2">Microsoft<br/>
+		</font><font face="Arial" size="5" color="#000000">&nbsp;&nbsp;&nbsp; </font>
+		<font color="#000000" face="Arial" size="6">Research</font></a></b></td>
+		<td width="500">
+
+		<p align="right"><a href="http://research.microsoft.com/research/eScience/" style="text-decoration: none; font-weight: 700"><font size="5" color="#000000" face="Arial">eScience 
+		Research Group</font></a></td>
+		<td>
+		&nbsp;</td>
+	</tr>
+</table>
+<p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="23">&nbsp;</td>
+		<td width="1001" bgcolor="#E3E3E1">
+		<table border="1" width="100%" bordercolorlight="#D1DBDA" bordercolordark="#FFFFFF" bgcolor="#EEF0ED">
+			<tr>
+				<td width="265">
+		<a href="http://atom.research.microsoft.com/bio/" style="text-decoration: none; font-weight: 700">
+				<font color="#666666" size="4" face="Arial">Computational 
+				Biology Tools</font></a></td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+		<td>
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="23">&nbsp;</td>
+		<td width="1001" bgcolor="#E3E3E1">
+		<table border="1" width="100%" bordercolorlight="#D1DBDA" bordercolordark="#FFFFFF" bgcolor="#DBDCD7">
+			<tr>
+				<td width="322"><br>
+				<span style="font-weight: 700">
+				<font face="Arial" size="6" color="#666666">Create Epitome</font></span></td>
+				<td align="left">
+				<table border="0" width="278" height="49">
+					<tr>
+						<td width="91" align="center" valign="bottom"><b>
+						<font face="Arial" size="2">
+						<a href="Details.htm">
+						<font color="#000000">Details</font></a></font></b></td>
+						<td width="91" align="center" valign="bottom"><b>
+						<font face="Arial" size="2"><a href="#References">
+						<font color="#000000">References</font></a></font></b></td>
+						<td width="92" align="center" valign="bottom"><b>
+						<font face="Arial" size="2"><a href="#Code">
+						<font color="#000000">Code</font></a></font></b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+		<td>
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="23" height="532">&nbsp;</td>
+		<td width="1001" height="532" bgcolor="#FFFFFF">
+		<table border="0" width="1001" height="536">
+			<tr>
+				<td valign="top"><div id="silverlightControlHost" >
+		<font face="Arial">
+		<object id="silverlightControl" data="data:application/x-silverlight," type="application/x-silverlight-2" width="800" height="502">
+			<param name="source" value="ClientBin/CreateEpitomeSL.xap"/>
+			<param name="onerror" value="onSilverlightError" />
+			<param name="background" value="white" />
+			<param name="minRuntimeVersion" value="2.0.31005.0" />
+			<param name="autoUpgrade" value="true" />
+			<a href="http://go.microsoft.com/fwlink/?LinkID=124807" style="text-decoration: none;">
+     			<img src="http://go.microsoft.com/fwlink/?LinkId=108181" alt="Get Microsoft Silverlight" style="border-style: none"/>
+			</a>
+		</object>
+		<iframe style='visibility:hidden;height:0;width:0;border:0px' name="I1"></iframe>
+	</font></div></td>
+				<td valign="top">
+				<table border="0" width="100%" cellspacing="5" cellpadding="3">
+					<tr>
+						<td bgcolor="#F2F2F2" valign="top">
+						<h2><span class="style1">
+						<font face="Arial" size="4" color="#0000FF">About</font></span></h2>
+						<p><span class="style1">
+						<font size="3" face="Arial" color="#757575">The tool 
+						takes amino acid sequences (or text) as input and 
+						produces epitomes of all lengths.<br>
+&nbsp;</font></span></td>
+					</tr>
+					<tr>
+						<td bgcolor="#F2F2F2" valign="top">
+						<h2>
+
+
+
+			<span class="style1">
+						<font face="Arial" size="4" color="#0000FF">Quick Help</font></span></h2>
+						<p><span class="style1">
+						<font size="3" face="Arial" color="#757575">Paste (cntl-V) 
+						or upload text input text or try a sample.</font></span></p>
+						<p><span class="style1">
+						<font size="3" face="Arial" color="#757575">Start with 
+						&quot;Compute Results&quot; button.</font></span></p>
+						<p><span class="style1">
+						<font face="Arial" color="#757575" size="3">Select all 
+						results (cntl-A)and copy (cntl-C).</font></span></p>
+						<p><span class="style1">
+						<font size="3" face="Arial" color="#757575">To see 
+						all work steps, uncheck the box.<br>
+&nbsp;</font></span></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+		<td height="532">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="23">&nbsp;</td>
+		<td width="1001" bgcolor="#FFFFFF">
+
+
+
+			<span class="style1">
+		<table border="0" width="100%" cellspacing="5" cellpadding="5">
+			<tr>
+				<td width="438" bgcolor="#F2F2F2" valign="top">
+
+
+
+			<span class="style1">
+				<h2 align="left"><font face="Arial" color="#0000FF" size="4">
+				<a name="References">References</a></font></h2>
+				<ul>
+					<li><font face="Arial" size="3" color="#757575">D. Yerly, D. Heckerman, T. Allen, T. Suscovich, N. Jojic, C. Kadie, W. 
+			Pichler, A. Cerny, C. Brander.&nbsp; Design, expression and processing of 
+			epitomized HCV encoded CTL epitopes. <i>J. Immunol</i>, to appear.</font></li>
+					<li><font color="#757575" face="Arial" size="3">&nbsp;D. Nickle, N. Jojic, D. Heckerman, V. Jojic, D. Kirovski, M. 
+			Rolland, S. Pond, J. Mullins. &nbsp;</font></span></span><font face="Arial"><a href="http://compbiol.plosjournals.org/perlserv/?request=get-document&doi=10.1371/journal.pcbi.0040025">Comparison 
+			of immunogen designs that optimize peptide coverage: Reply to 
+			Fischer et al.,</a></font><span class="style1"><font color="#757575" face="Arial" size="3"> <i>PLoS Computational Biology</i>, 4(1):e25, 
+			January 2008.</font></li>
+					<li><font color="#757575" face="Arial" size="3">&nbsp;D. Nickle, M. Rolland, M. Jensen, S. Pond, W. Deng, M. Seligman, 
+			D. Heckerman, J. Mullins, and N. Jojic.&nbsp; </font>
+			</span>
+					<a href="http://compbiol.plosjournals.org/perlserv/?request=get-document&doi=10.1371/journal.pcbi.0030075">
+					<font face="Arial">Coping with viral diversity in HIV vaccine design</font></a><span class="style1"><font color="#757575" face="Arial" size="3">, 
+					<i>PLoS 
+			Computational Biology,</i> 3(4): e75, April 2007.</font></li>
+					<li><font color="#757575" face="Arial" size="3">&nbsp;N. Jojic, V. Jojic, B. Frey, C. Meek, and D. Heckerman.&nbsp;
+					</font>
+			</span>
+					<a href="http://books.nips.cc/papers/files/nips18/NIPS2005_0759.pdf">
+					<font face="Arial">Using epitomes to model genetic diversity: Rational design of HIV 
+			vaccine cocktails</font><font face="Arial" size="3"><span class="style1"><font color="#757575">.</font></span></font></a><span class="style1"><font color="#757575" face="Arial" size="3">&nbsp; NIPS 2005.</font></li>
+				</ul></td>
+				<td bgcolor="#F2F2F2" valign="top">
+				<h2><font face="Arial" size="4" color="#0000FF"><a name="Code">Code</a></font></span></h2>
+				<p><span class="style1">
+				<font size="3" face="Arial" color="#757575">Downloadable Windows 
+				<a href="http://www.codeplex.com/MSCompBio/Wiki/View.aspx?title=Create Epitome&referringTitle=Home">program</a><br>
+				Open source 
+				<a href="http://www.codeplex.com/MSCompBio/Wiki/View.aspx?title=Create Epitome&referringTitle=Home">code</a>.</font></span></p>
+				</td>
+			</tr>
+		</table>
+&nbsp;</td>
+		<td>
+		<h3><font face="Arial"><br>
+&nbsp;</font></h3>
+		<p>&nbsp;</td>
+	</tr>
+</table>
+</body>
+</html>
+
+<!-- Microsoft Research, eScience Research Group, Microsoft Reciprocal License (Ms-RL)
+     Copyright (c) Microsoft Corporation. All rights reserved.
+-->

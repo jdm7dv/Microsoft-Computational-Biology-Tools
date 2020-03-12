@@ -1,0 +1,80 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9EBA4598-3FE5-4EE8-BBFD-53E7E6D38C21}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HlaAssignCCS</RootNamespace>
+    <AssemblyName>HlaAssignCCS</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CCPAPI, Version=1.0.2.3, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\deldir\carlk\CCPAPI.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HlaAssignCCSMain.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Epipred\Epipred.csproj">
+      <Project>{6430A843-90B4-403B-9B4B-27CF12E234A4}</Project>
+      <Name>Epipred</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\phyloTree\CCSLib\CCSLib.csproj">
+      <Project>{1FF9E7F1-4571-495B-AF7A-CE1151C4EDC1}</Project>
+      <Name>CCSLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\PhyloTree\Tabulate\Tabulate.csproj">
+      <Project>{645958E2-F482-4ADD-AFF0-0A27F3B6AC9D}</Project>
+      <Name>Tabulate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SpecialFunctions\SpecialFunctions.csproj">
+      <Project>{E6604CCC-9041-4069-B092-6EBEEF593538}</Project>
+      <Name>SpecialFunctions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HlaAssign.csproj">
+      <Project>{CD5E97D2-492E-4FE6-93AE-8529225061A4}</Project>
+      <Name>HlaAssign</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

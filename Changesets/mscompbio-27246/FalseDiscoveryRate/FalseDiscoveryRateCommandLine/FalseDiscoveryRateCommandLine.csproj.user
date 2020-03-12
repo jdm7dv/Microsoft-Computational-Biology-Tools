@@ -1,0 +1,10 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <StartWorkingDirectory>D:\FDR\Synthetic2\</StartWorkingDirectory>
+    <StartArguments>synth-0.2.txt synth-0.2FDR.filtering.txt -ColumnHeaders -UseTableNames:1 -Filtering -FullOutput</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <StartWorkingDirectory>D:\FDR\Synthetic2\</StartWorkingDirectory>
+    <StartArguments>synth-0.2.txt synth-0.2FDR.filtering.txt -ColumnHeaders -UseTableNames:1 -Filtering -FullOutput</StartArguments>
+  </PropertyGroup>
+</Project>

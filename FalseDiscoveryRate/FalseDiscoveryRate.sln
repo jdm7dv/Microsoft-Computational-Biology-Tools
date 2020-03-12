@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FalseDiscoveryRateUI", "FalseDiscoveryRateUI\FalseDiscoveryRateUI.csproj", "{98602C6C-6083-4C90-B95E-3224CA99BE1F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{92166AC6-3326-46AF-92F5-04C429AC1DE3} = {92166AC6-3326-46AF-92F5-04C429AC1DE3}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FalseDiscoveryRateClasses", "FalseDiscoveryRateClasses\FalseDiscoveryRateClasses.csproj", "{92166AC6-3326-46AF-92F5-04C429AC1DE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FalseDiscoveryRateCommandLine", "FalseDiscoveryRateCommandLine\FalseDiscoveryRateCommandLine.csproj", "{58DCBAAE-6EBE-4C6D-95C7-95A709A4B275}"
+	ProjectSection(ProjectDependencies) = postProject
+		{92166AC6-3326-46AF-92F5-04C429AC1DE3} = {92166AC6-3326-46AF-92F5-04C429AC1DE3}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs02.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FalseDiscoveryRateClasses\\FalseDiscoveryRateClasses.csproj
+		SccProjectName1 = FalseDiscoveryRateClasses
+		SccLocalPath1 = FalseDiscoveryRateClasses
+		SccProjectUniqueName2 = FalseDiscoveryRateClasses\\FalseDiscoveryRateClassesSL.csproj
+		SccProjectName2 = FalseDiscoveryRateClasses
+		SccLocalPath2 = FalseDiscoveryRateClasses
+		SccProjectUniqueName3 = FalseDiscoveryRateCommandLine\\FalseDiscoveryRateCommandLine.csproj
+		SccProjectName3 = FalseDiscoveryRateCommandLine
+		SccLocalPath3 = FalseDiscoveryRateCommandLine
+		SccProjectUniqueName4 = FalseDiscoveryRateUI\\FalseDiscoveryRateUI.csproj
+		SccProjectName4 = FalseDiscoveryRateUI
+		SccLocalPath4 = FalseDiscoveryRateUI
+		SccProjectUniqueName5 = FisherExactTest\\FisherExactTest.csproj
+		SccProjectName5 = FisherExactTest
+		SccLocalPath5 = FisherExactTest
+		SccProjectUniqueName6 = OnlineFDRUI\\OnlineFDRUI.csproj
+		SccProjectName6 = OnlineFDRUI
+		SccLocalPath6 = OnlineFDRUI
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98602C6C-6083-4C90-B95E-3224CA99BE1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98602C6C-6083-4C90-B95E-3224CA99BE1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98602C6C-6083-4C90-B95E-3224CA99BE1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98602C6C-6083-4C90-B95E-3224CA99BE1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92166AC6-3326-46AF-92F5-04C429AC1DE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92166AC6-3326-46AF-92F5-04C429AC1DE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92166AC6-3326-46AF-92F5-04C429AC1DE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92166AC6-3326-46AF-92F5-04C429AC1DE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58DCBAAE-6EBE-4C6D-95C7-95A709A4B275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58DCBAAE-6EBE-4C6D-95C7-95A709A4B275}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58DCBAAE-6EBE-4C6D-95C7-95A709A4B275}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58DCBAAE-6EBE-4C6D-95C7-95A709A4B275}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

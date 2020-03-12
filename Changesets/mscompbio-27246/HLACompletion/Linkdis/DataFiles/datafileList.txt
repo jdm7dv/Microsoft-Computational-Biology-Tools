@@ -1,0 +1,71 @@
+Ethnicity	Class	HlaLengthList	FileName
+African	C	2 2 2	haplotypeModelBackOff.eth_African.2008-02-08_15_33_43_locus_C_A2B2C2.csv
+Amerindian	C	2 2 2	haplotypeModelBackOff.eth_Amerindian.2008-02-08_15_39_08_locus_C_A2B2C2.csv
+Asian	C	2 2 2	haplotypeModelBackOff.eth_Asian.2008-02-08_15_39_54_locus_C_A2B2C2.csv
+European	C	2 2 2	haplotypeModelBackOff.eth_European.2008-02-08_15_40_58_locus_C_A2B2C2.csv
+Hispanic	C	2 2 2	haplotypeModelBackOff.eth_Hispanic.2008-02-08_15_41_22_locus_C_A2B2C2.csv
+African	A	4	haplotypeModel.eth_African.locus_A.2008-01-31_16_51_04.csv
+African	B	4 4	haplotypeModel.eth_African.locus_B.2008-01-31_16_51_04.csv
+African	C	4 4 4	haplotypeModel.eth_African.locus_C.2008-01-31_16_51_04.csv
+Amerindian	A	4	haplotypeModel.eth_Amerindian.locus_A.2008-01-31_16_51_04.csv
+Amerindian	B	4 4	haplotypeModel.eth_Amerindian.locus_B.2008-01-31_16_51_04.csv
+Amerindian	C	4 4 4	haplotypeModel.eth_Amerindian.locus_C.2008-01-31_16_51_04.csv
+Asian	A	4	haplotypeModel.eth_Asian.locus_A.2008-01-31_16_51_04.csv
+Asian	B	4 4	haplotypeModel.eth_Asian.locus_B.2008-01-31_16_51_04.csv
+Asian	C	4 4 4	haplotypeModel.eth_Asian.locus_C.2008-01-31_16_51_04.csv
+European	A	4	haplotypeModel.eth_European.locus_A.2008-01-31_16_51_04.csv
+European	B	4 4	haplotypeModel.eth_European.locus_B.2008-01-31_16_51_04.csv
+European	C	4 4 4	haplotypeModel.eth_European.locus_C.2008-01-31_16_51_04.csv
+Hispanic	A	4	haplotypeModel.eth_Hispanic.locus_A.2008-01-31_16_51_04.csv
+Hispanic	B	4 4	haplotypeModel.eth_Hispanic.locus_B.2008-01-31_16_51_04.csv
+Hispanic	C	4 4 4	haplotypeModel.eth_Hispanic.locus_C.2008-01-31_16_51_04.csv
+African	A	2	haplotypeModelBackOff.eth_African.2008-02-01_15_00_44_locus_A_A2.csv
+African	B	2 2	haplotypeModelBackOff.eth_African.2008-02-01_15_00_44_locus_B_A2B2.csv
+African	B	2 4	haplotypeModelBackOff.eth_African.2008-02-01_15_00_44_locus_B_A2B4.csv
+African	B	4 2	haplotypeModelBackOff.eth_African.2008-02-01_15_00_44_locus_B_A4B2.csv
+African	C	2 2 4	haplotypeModelBackOff.eth_African.2008-02-01_15_00_44_locus_C_A2B2C4.csv
+African	C	2 4 2	haplotypeModelBackOff.eth_African.2008-02-01_15_00_44_locus_C_A2B4C2.csv
+African	C	2 4 4	haplotypeModelBackOff.eth_African.2008-02-01_15_00_44_locus_C_A2B4C4.csv
+African	C	4 2 2	haplotypeModelBackOff.eth_African.2008-02-01_15_00_44_locus_C_A4B2C2.csv
+African	C	4 2 4	haplotypeModelBackOff.eth_African.2008-02-01_15_00_44_locus_C_A4B2C4.csv
+African	C	4 4 2	haplotypeModelBackOff.eth_African.2008-02-01_15_00_44_locus_C_A4B4C2.csv
+Amerindian	A	2	haplotypeModelBackOff.eth_Amerindian.2008-02-01_15_01_03_locus_A_A2.csv
+Amerindian	B	2 2	haplotypeModelBackOff.eth_Amerindian.2008-02-01_15_01_03_locus_B_A2B2.csv
+Amerindian	B	2 4	haplotypeModelBackOff.eth_Amerindian.2008-02-01_15_01_03_locus_B_A2B4.csv
+Amerindian	B	4 2	haplotypeModelBackOff.eth_Amerindian.2008-02-01_15_01_03_locus_B_A4B2.csv
+Amerindian	C	2 2 4	haplotypeModelBackOff.eth_Amerindian.2008-02-01_15_01_03_locus_C_A2B2C4.csv
+Amerindian	C	2 4 2	haplotypeModelBackOff.eth_Amerindian.2008-02-01_15_01_03_locus_C_A2B4C2.csv
+Amerindian	C	2 4 4	haplotypeModelBackOff.eth_Amerindian.2008-02-01_15_01_03_locus_C_A2B4C4.csv
+Amerindian	C	4 2 2	haplotypeModelBackOff.eth_Amerindian.2008-02-01_15_01_03_locus_C_A4B2C2.csv
+Amerindian	C	4 2 4	haplotypeModelBackOff.eth_Amerindian.2008-02-01_15_01_03_locus_C_A4B2C4.csv
+Amerindian	C	4 4 2	haplotypeModelBackOff.eth_Amerindian.2008-02-01_15_01_03_locus_C_A4B4C2.csv
+Asian	A	2	haplotypeModelBackOff.eth_Asian.2008-02-01_15_01_06_locus_A_A2.csv
+Asian	B	2 2	haplotypeModelBackOff.eth_Asian.2008-02-01_15_01_06_locus_B_A2B2.csv
+Asian	B	2 4	haplotypeModelBackOff.eth_Asian.2008-02-01_15_01_06_locus_B_A2B4.csv
+Asian	B	4 2	haplotypeModelBackOff.eth_Asian.2008-02-01_15_01_06_locus_B_A4B2.csv
+Asian	C	2 2 4	haplotypeModelBackOff.eth_Asian.2008-02-01_15_01_06_locus_C_A2B2C4.csv
+Asian	C	2 4 2	haplotypeModelBackOff.eth_Asian.2008-02-01_15_01_06_locus_C_A2B4C2.csv
+Asian	C	2 4 4	haplotypeModelBackOff.eth_Asian.2008-02-01_15_01_06_locus_C_A2B4C4.csv
+Asian	C	4 2 2	haplotypeModelBackOff.eth_Asian.2008-02-01_15_01_06_locus_C_A4B2C2.csv
+Asian	C	4 2 4	haplotypeModelBackOff.eth_Asian.2008-02-01_15_01_06_locus_C_A4B2C4.csv
+Asian	C	4 4 2	haplotypeModelBackOff.eth_Asian.2008-02-01_15_01_06_locus_C_A4B4C2.csv
+European	A	2	haplotypeModelBackOff.eth_European.2008-02-01_15_01_12_locus_A_A2.csv
+European	B	2 2	haplotypeModelBackOff.eth_European.2008-02-01_15_01_12_locus_B_A2B2.csv
+European	B	2 4	haplotypeModelBackOff.eth_European.2008-02-01_15_01_12_locus_B_A2B4.csv
+European	B	4 2	haplotypeModelBackOff.eth_European.2008-02-01_15_01_12_locus_B_A4B2.csv
+European	C	2 2 4	haplotypeModelBackOff.eth_European.2008-02-01_15_01_12_locus_C_A2B2C4.csv
+European	C	2 4 2	haplotypeModelBackOff.eth_European.2008-02-01_15_01_12_locus_C_A2B4C2.csv
+European	C	2 4 4	haplotypeModelBackOff.eth_European.2008-02-01_15_01_12_locus_C_A2B4C4.csv
+European	C	4 2 2	haplotypeModelBackOff.eth_European.2008-02-01_15_01_12_locus_C_A4B2C2.csv
+European	C	4 2 4	haplotypeModelBackOff.eth_European.2008-02-01_15_01_12_locus_C_A4B2C4.csv
+European	C	4 4 2	haplotypeModelBackOff.eth_European.2008-02-01_15_01_12_locus_C_A4B4C2.csv
+Hispanic	A	2	haplotypeModelBackOff.eth_Hispanic.2008-02-01_15_01_42_locus_A_A2.csv
+Hispanic	B	2 2	haplotypeModelBackOff.eth_Hispanic.2008-02-01_15_01_42_locus_B_A2B2.csv
+Hispanic	B	2 4	haplotypeModelBackOff.eth_Hispanic.2008-02-01_15_01_42_locus_B_A2B4.csv
+Hispanic	B	4 2	haplotypeModelBackOff.eth_Hispanic.2008-02-01_15_01_42_locus_B_A4B2.csv
+Hispanic	C	2 2 4	haplotypeModelBackOff.eth_Hispanic.2008-02-01_15_01_42_locus_C_A2B2C4.csv
+Hispanic	C	2 4 2	haplotypeModelBackOff.eth_Hispanic.2008-02-01_15_01_42_locus_C_A2B4C2.csv
+Hispanic	C	2 4 4	haplotypeModelBackOff.eth_Hispanic.2008-02-01_15_01_42_locus_C_A2B4C4.csv
+Hispanic	C	4 2 2	haplotypeModelBackOff.eth_Hispanic.2008-02-01_15_01_42_locus_C_A4B2C2.csv
+Hispanic	C	4 2 4	haplotypeModelBackOff.eth_Hispanic.2008-02-01_15_01_42_locus_C_A4B2C4.csv
+Hispanic	C	4 4 2	haplotypeModelBackOff.eth_Hispanic.2008-02-01_15_01_42_locus_C_A4B4C2.csv

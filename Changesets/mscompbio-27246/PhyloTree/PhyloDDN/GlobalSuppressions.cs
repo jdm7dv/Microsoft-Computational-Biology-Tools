@@ -1,0 +1,1 @@
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1705:LongAcronymsShouldBePascalCased", Scope = "namespace", Target = "PhyloDDN", Justification="DN is a two-letter acronym standing for the Digipede Network and PhyloD is established in this project as such.")]

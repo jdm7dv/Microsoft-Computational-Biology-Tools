@@ -1,0 +1,11 @@
+C:\Research\projects\FalseDiscoveryRate\FalseDiscoveryRateUI\bin\Debug\FalseDiscoveryRateUI.exe
+C:\Research\projects\FalseDiscoveryRate\FalseDiscoveryRateUI\bin\Debug\FalseDiscoveryRateUI.pdb
+C:\Research\projects\FalseDiscoveryRate\FalseDiscoveryRateUI\bin\Debug\FalseDiscoveryRateClasses.dll
+C:\Research\projects\FalseDiscoveryRate\FalseDiscoveryRateUI\bin\Debug\FalseDiscoveryRateClasses.pdb
+C:\Research\projects\FalseDiscoveryRate\FalseDiscoveryRateUI\obj\Debug\ResolveAssemblyReference.cache
+C:\Research\projects\FalseDiscoveryRate\FalseDiscoveryRateUI\obj\Debug\FalseDiscoveryRateUI.FalseDiscoveryRateComputationTask.resources
+C:\Research\projects\FalseDiscoveryRate\FalseDiscoveryRateUI\obj\Debug\FalseDiscoveryRateUI.FalseDiscoveryRateForm.resources
+C:\Research\projects\FalseDiscoveryRate\FalseDiscoveryRateUI\obj\Debug\FalseDiscoveryRateUI.Properties.Resources.resources
+C:\Research\projects\FalseDiscoveryRate\FalseDiscoveryRateUI\obj\Debug\FalseDiscoveryRateUI.csproj.GenerateResource.Cache
+C:\Research\projects\FalseDiscoveryRate\FalseDiscoveryRateUI\obj\Debug\FalseDiscoveryRateUI.exe
+C:\Research\projects\FalseDiscoveryRate\FalseDiscoveryRateUI\obj\Debug\FalseDiscoveryRateUI.pdb

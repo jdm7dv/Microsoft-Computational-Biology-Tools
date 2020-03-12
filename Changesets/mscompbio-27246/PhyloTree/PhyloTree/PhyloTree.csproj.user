@@ -1,0 +1,10 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <StartWorkingDirectory>D:\Source\CarlK\Bio\CodePlex\TestMSCompBio\PhyloTree\PhyloD\RegressionTest</StartWorkingDirectory>
+    <StartArguments>Input\tree.03062007.txt Input\hla.03062007.txt Input\aaPos.03062007.txt DiscreteConditionalEscape PredictorPermutation test03062007 TempOutput 0 1 -1-9</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <StartWorkingDirectory>D:\Source\CarlK\Bio\CodePlex\TestMSCompBio\PhyloTree\PhyloD\RegressionTest</StartWorkingDirectory>
+    <StartArguments>Input\tree.03062007.txt Input\hla.03062007.txt Input\aaPos.03062007.txt DiscreteConditionalEscape PredictorPermutation test03062007 TempOutput 0 1 -1-9</StartArguments>
+  </PropertyGroup>
+</Project>

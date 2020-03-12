@@ -1,0 +1,9 @@
+peptide	cid	magnitude
+AAAAAAAAA	patient1	100
+AAAAAAAAA	patient9	100
+AAAAAAAAA	patient10	100
+AAAAAAAAA	patient14	100
+AAAAAAAAA	patient15	100
+AAAAAAAAA	patient21	100
+AAAAAAAAA	patient23	100
+AAAAAAAAA	patient24	100

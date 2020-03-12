@@ -1,0 +1,10 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <StartArguments>Inputs\input.txt TempOutput\vaccine.txt</StartArguments>
+    <StartWorkingDirectory>C:\Program Files (x86)\MSCompBio\CreateEpitome\RegressionTest</StartWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <StartArguments>D:\Source\CarlK\Bio\VirusCount\CreateVaccine\CreateEpitome\RegressionTest\gag.txt TempOutput\delme.txt</StartArguments>
+    <StartWorkingDirectory>D:\Source\CarlK\Bio\CodePlex\MSCompBio3B\CreateEpitome\CreateVaccine\CreateEpitome\RegressionTest</StartWorkingDirectory>
+  </PropertyGroup>
+</Project>

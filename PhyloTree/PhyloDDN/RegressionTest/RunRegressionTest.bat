@@ -1,0 +1,1 @@
+%1\phyloddn.exe -u  Digipede -p reg4me -poolid 1 -host donserver 30 Input\tree.03062007.txt Input\hla.03062007.txt Input\aaPos.03062007.txt DiscreteConditionalEscape PredictorPermutation test03062007 TempOutput -1-9
